@@ -14,5 +14,18 @@ public class Runner implements CommandLineRunner {
     @Override
     public void run(String...args)throws Exception{
      donutRepo.save(new Donut("Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Strawberry Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Chocolate Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Strawberry Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Chocolate Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Strawberry Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Chocolate Glazed",false, Type.YEAST));
+        donutRepo.save(new Donut("Strawberry Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Chocolate Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Strawberry Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Chocolate Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Strawberry Glazed",true, Type.YEAST));
+        donutRepo.save(new Donut("Chocolate Glazed",false, Type.YEAST));
+
     }
 }
