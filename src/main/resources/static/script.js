@@ -12,7 +12,9 @@ fetch('http://localhost:8080/donuts')
          let tbody = document.querySelector("tbody")
          let tr = document.createElement("tr")
  tr.innerHTML = `<td>${json[el].id}</td><td>${json[el].name}</td><td>${json[el].frosted? 'frosted':'Not frosted'}</td>
- <td>${json[el].donutType}</td>`
+ <td>${json[el].donutType}</td>
+ <td><i class="fa fa-trash" style="cursor:pointer" onclick="deleteItem(${json[el].id})"></i></td>
+             <td><i class="fas fa-pencil-alt" onclick="updateItem()"></i></td>`
 tbody.appendChild(tr)
 }
 
