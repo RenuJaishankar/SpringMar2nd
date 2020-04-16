@@ -13,7 +13,7 @@ fetch('/donuts')
       //${json[el].frosted ? "frosted" : "not frosted"}
       let tbody = document.querySelector("tbody")
       let tr = document.createElement("tr")
-      tr.setAttribute("contenteditable",false)
+      tr.setAttribute("contenteditable","false")
       tr.classList = `row-${json[el].id} item`
       tr.innerHTML = `<td>${json[el].id}</td> 
       <td id="${json[el].id}-name">${json[el].name}</td>
